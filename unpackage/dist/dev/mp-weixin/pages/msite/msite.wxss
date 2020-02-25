@@ -26,6 +26,9 @@
   font-size: 14px;
   position: relative;
 }
+.msiteModule .fixedContainer .navContainer .navItem:nth-child(11) {
+  padding-right: 70px;
+}
 .msiteModule .fixedContainer .navContainer .navItem.activeClass {
   color: #bb2c08;
   border-bottom: 1px solid #bb2c08;
@@ -43,5 +46,61 @@
 }
 .jiantou .iconfont {
   font-size: 30px;
+}
+.mask-wrap {
+  width: 100%;
+  height: calc(100vh - 52px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.4);
+}
+.mask-wrap .mask-top {
+  width: 100%;
+}
+.mask-wrap .mask-top .nav-title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.mask-wrap .mask-top .more-cate {
+  padding-top: 10px;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.mask-wrap .mask-top .more-cate .cate-list {
+  width: 100%;
+  overflow: hidden;
+}
+.mask-wrap .mask-top .more-cate .cate-list ._li {
+  float: left;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+.mask-wrap .mask-top .more-cate .cate-list ._li.activeClass {
+  color: #bb2c08;
+  border: 1px solid #bb2c08;
+}
+.mask-wrap .mask-top .more-cate .cate-list ._li ._span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+.mask-wrap .mask-bottom {
+  width: 100%;
+  height: 100%;
 }
 
