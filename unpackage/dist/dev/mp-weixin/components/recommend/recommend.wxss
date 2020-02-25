@@ -1,0 +1,65 @@
+.recommendContainer {
+  width: 100%;
+  margin-top: 90px;
+}
+.recommendContainer swiper {
+  width: 100%;
+  height: 200px;
+}
+.recommendContainer swiper image {
+  width: 100%;
+  height: 100%;
+}
+.recommendContainer .policyDescList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.recommendContainer .policyDescList .policyDescItem {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.recommendContainer .policyDescList .policyDescItem ._img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.recommendContainer .policyDescList .policyDescItem ._span {
+  font-size: 12px;
+  vertical-align: middle;
+}
+.recommendContainer .kingKongList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.recommendContainer .kingKongList .kingKongItem {
+  width: 20%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.recommendContainer .kingKongList .kingKongItem ._img {
+  width: 55px;
+  height: 55px;
+}
+.recommendContainer .kingKongList .kingKongItem ._span {
+  font-size: 12px;
+  line-height: 25px;
+}
+

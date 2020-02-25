@@ -1,0 +1,47 @@
+.msiteModule {
+  width: 100%;
+  height: 100%;
+}
+.msiteModule .fixedContainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: #fff;
+}
+.msiteModule .fixedContainer .navContainer {
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+.msiteModule .fixedContainer .navContainer .navItem {
+  width: 70px;
+  height: 100%;
+  margin: 0 5px;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+.msiteModule .fixedContainer .navContainer .navItem.activeClass {
+  color: #bb2c08;
+  border-bottom: 1px solid #bb2c08;
+}
+.jiantou {
+  position: fixed;
+  right: 0;
+  top: 50px;
+  height: 42px;
+  line-height: 38px;
+  background-color: #fff;
+  width: 70px;
+  text-align: center;
+  z-index: 120;
+}
+.jiantou .iconfont {
+  font-size: 30px;
+}
+
