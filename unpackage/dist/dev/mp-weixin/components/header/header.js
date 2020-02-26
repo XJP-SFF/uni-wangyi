@@ -116,6 +116,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -126,8 +127,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
+var _default =
+{
+  data: function data() {
+    return {};
 
+
+  },
+  methods: {
+    handleLogin: function handleLogin() {
+      //跳转到login.vue页面
+      uni.navigateTo({
+        url: '/pages/login/login' });
+
+    },
+    handleSearch: function handleSearch() {
+      //跳转到search.vue页面
+      uni.navigateTo({
+        url: '/pages/search/search' });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

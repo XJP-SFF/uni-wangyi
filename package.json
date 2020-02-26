@@ -1,0 +1,22 @@
+{
+  "name": "uni_wangyi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XJP-SFF/uni-wangyi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XJP-SFF/uni-wangyi/issues"
+  },
+  "homepage": "https://github.com/XJP-SFF/uni-wangyi#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

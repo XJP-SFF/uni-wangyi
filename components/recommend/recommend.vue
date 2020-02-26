@@ -1,7 +1,7 @@
 <template>
 	<div class='recommendContainer'>
 		<!-- 轮播 -->
-		<swiper :indicator-dots="true" :autoplay="true" indicator-color='green' indicator-active-color='pink'>
+		<swiper :indicator-dots="true" :autoplay="true" indicator-color='gray' indicator-active-color='red'>
 			<swiper-item v-for="(focusItem, index) in focusList" :key="index">
 				<image :src="focusItem.picUrl" mode=""></image>
 			</swiper-item>
@@ -514,16 +514,25 @@
 		//限时购
 		.flashSale-module
 			width 100%
-			padding 0 30px
+			padding 0 20px
 			background-color #fff
 			box-sizing border-box
 			margin-bottom 30px
+			position relative
+			&::before
+				content ""
+				position absolute
+				top 0
+				left 0
+				height 10px
+				width 100%
+				background-color #eee
 			.flashSale-module-title
 				display flex
 				width 100%
-				height 100px
-				line-height 100px
-				font-size 32px
+				height 60px
+				line-height 60px
+				font-size 16px
 				.flashSale
 					flex-grow 1
 				.count-time
@@ -535,7 +544,7 @@
 						text-align center
 						line-height 36px
 						color #fff
-						font-size 24px
+						font-size 12px
 						padding 0 5px
 						border-radius 5px
 					.dot
@@ -543,7 +552,7 @@
 				.more
 					flex-grow 2
 					text-align right
-					margin-right 10px
+					margin-right 5px
 			.flashSale-content
 				width 100%
 				box-sizing border-box
@@ -551,16 +560,16 @@
 					width 100%
 					overflow hidden
 					li
-						width 250px
+						width 110px
 						float left
-						padding-bottom 30px
-						margin-right 30px
+						padding-bottom 10px
+						margin-right 2px
 						border-radius 5px
 						&:nth-child(3), &:nth-child(6)
 							margin-right 0
 						>.img-wrap
-							width 250px
-							height 240px
+							width 100px
+							height 100px
 							background-color #f5f5f5
 							img
 								width 100%
@@ -568,14 +577,169 @@
 						.price
 							width 100%
 							margin-top 10px
-							padding-left 20px
+							padding-left 10px
 							span 
 								&:nth-child(1)
 									color red
-									font-size 28px
+									font-size 14px
 									margin-right 10px
 								&:nth-child(2)
-									font-size 24px
-							
-
+									font-size 12px
+		//新品首发
+		.newItem-module
+			width 100%
+			padding 0 20px
+			background-color #fff
+			box-sizing border-box
+			margin-bottom 20px
+			padding-bottom 20px
+			position relative
+			&::before
+				content ""
+				width 100%
+				height 10px
+				background-color #eee
+				position absolute
+				top 0
+				left 0
+			.newItem-title
+				display flex
+				width 100%
+				height 60px
+				line-height 60px
+				font-size 16px
+				.newItem
+					flex-grow 1
+				.more
+					flex-grow 2
+					text-align right
+					margin-right 10px
+			.newItem-content
+				width 100%
+				box-sizing border-box
+				ul
+					width 100%
+					overflow hidden
+					li
+						width 100px
+						float left
+						padding-bottom 10px
+						margin-right 15px
+						border-radius 5px
+						&:nth-child(3), &:nth-child(6)
+							margin-right 0
+						>.img-wrap
+							width 100px
+							height 108px
+							background-color #f5f5f5
+							img
+								width 100%
+								height 100%
+						.good
+							width 100%
+							font-size 12px
+							overflow hidden
+							.newItemDesc
+								width 100%
+								font-size 14px
+								line-height 30px
+								margin-top 10px
+								white-space nowrap
+							.price
+								color red
+								font-size 14px
+								padding 5px 0
+							.tag-wrap
+								width 60px
+								height 25px
+								text-align center
+								line-height 25px
+								border 1px solid red
+								span
+									color red
+									font-size 12px					
+		// 其他   
+		.sceneLight-shoppingGuide-module
+			width 100%
+			padding 20px
+			background-color #fff
+			box-sizing border-box
+			margin-bottom 15px
+			position relative
+			&::before
+				content ""
+				width 100%
+				height 10px
+				background-color #eee
+				position absolute
+				top 0
+				left 0
+			ul
+				width 100%
+				overflow hidden
+				li
+					float left
+					width 49%
+					margin 0 5px 5px 0
+					padding 10px 0 0 20px
+					box-sizing border-box
+					background-color #f5f5f5
+					.title
+						>span
+							font-size 12px
+							line-height 20px
+							color #7f7f7f
+							&:nth-child(1)
+								font-size 14px
+								color #000
+					.pic
+						display flex
+						img
+							width 100px
+							height 90px
+					&:nth-child(2), &:nth-child(4)
+						margin-right 0
+					&:nth-child(3), &:nth-child(4)
+						margin-bottom 0
+		//底部版权所有
+		.bottom-copyright-module
+			width 100%
+			height 122px
+			background-color #000
+			// margin-bottom 88px
+			font-size 12px
+			color rgb(153,153,153)
+			position relative
+			padding-top 20px
+			&::before
+				content ""
+				width 100%
+				height 10px
+				background-color #eee
+				position absolute
+				top 0
+				left 0
+			.load
+				display flex
+				justify-content center
+				align-items center
+				width 100%
+				height 61px
+				line-height 61px
+				a
+					border 1px solid #fff
+					display block
+					text-align center
+					width 86px
+					height 31px
+					line-height 31px
+					color rgb(153,153,153)
+					&.app
+						margin-right 20px
+			.copyright
+				display flex
+				flex-direction column
+				text-align center
+				line-height 20px
+		
 </style>

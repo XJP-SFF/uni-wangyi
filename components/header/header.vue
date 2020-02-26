@@ -3,13 +3,34 @@
 			<image class="logo" src="../../static/images/logo.png" ></image>
 			<div class="searchInput" >
 				 <i class='iconfont icon-sousuo'></i>
-				 <input type="text" placeholder="搜索商品" placeholder-class="placeholder">
+				 <input @click="handleSearch" type="text" placeholder="搜索商品" placeholder-class="placeholder">
 			</div>
-			<button>登录</button>
+			<button @click="handleLogin">登录</button>
 		</div>
 </template>
 
 <script>
+	export default{
+		data(){
+			return{
+				
+			}
+		},
+		methods:{
+			handleLogin(){
+				//跳转到login.vue页面
+				uni.navigateTo({
+				    url: '/pages/login/login'
+				})
+			},
+			handleSearch(){
+				//跳转到search.vue页面
+				uni.navigateTo({
+				    url: '/pages/search/search'
+				});
+			}
+		}
+	}
 </script>
 
 <style lang="stylus">
@@ -37,7 +58,7 @@
 		input
 			border-radius 10px
 			height 30px
-			width 195px
+			width 150px
 			margin-left 40px
 		.placeholder
 			font-size 12px

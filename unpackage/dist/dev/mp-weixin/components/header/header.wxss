@@ -27,7 +27,7 @@
 .header-search-login .searchInput input {
   border-radius: 10px;
   height: 30px;
-  width: 195px;
+  width: 150px;
   margin-left: 40px;
 }
 .header-search-login .searchInput .placeholder {

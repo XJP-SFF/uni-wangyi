@@ -1,6 +1,11 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		
+		{
+			"path" : "pages/worthBuy/worthBuy",
+			"style" : {
+				"navigationBarTitleText": "值得买"
+			}
+		},
 		{
 			"path": "pages/msite/msite",
 			"style": {
@@ -10,13 +15,9 @@
 		},
 		{
 				"path" : "pages/shopCar/shopCar",
-				"style" : {}
-		},
-		{
-			"path" : "pages/worthBuy/worthBuy",
-			"style" : {
-				"navigationBarTitleText": "值得买"
-			}
+				"style" : {
+					"navigationBarTitleText": "购物车"
+				}
 		},
 		{
 			"path": "pages/polifile/polifile",
@@ -29,6 +30,7 @@
 			"path" : "pages/login/login",
 			"style" : {
 				"navigationBarBackgroundColor": "#F8F8F8",
+				"navigationBarTextStyle": "black",
 				"navigationBarTitleText": "登录"
 			}
 		},
@@ -37,6 +39,14 @@
 			"style": {
 				"navigationBarBackgroundColor": "#BB2C08",
 				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "搜索"
 			}
 		}
     ],

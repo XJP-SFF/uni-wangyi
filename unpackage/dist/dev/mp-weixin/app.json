@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/worthBuy/worthBuy",
     "pages/msite/msite",
     "pages/shopCar/shopCar",
-    "pages/worthBuy/worthBuy",
     "pages/polifile/polifile",
     "pages/login/login",
-    "pages/category/category"
+    "pages/category/category",
+    "pages/search/search"
   ],
   "subPackages": [],
   "window": {
@@ -50,6 +51,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap26.json"
+  "usingComponents": {}
 }

@@ -1,0 +1,101 @@
+.worthBuyModule.data-v-1660088f {
+  height: 100%;
+  background-color: #fafafa;
+}
+.worthBuyModule .trustBuy-header.data-v-1660088f {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.worthBuyModule .trustBuy-header .trustBuyWord.data-v-1660088f {
+  margin: 0 100px 0 110px;
+  font-size: 22px;
+}
+.worthBuyModule .trustBuy-header .iconfont.data-v-1660088f {
+  font-size: 30px;
+  vertical-align: middle;
+}
+.worthBuyModule .swiperTab-wrap.data-v-1660088f {
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+  background: url("https://m.you.163.com/topic/index/img/topic_title_bg.2373a140.png") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.worthBuyModule .swiperTab-wrap .swiperTab-title.data-v-1660088f {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 68px;
+  margin-bottom: 24px;
+}
+.worthBuyModule .swiperTab-wrap .swiperTab-title >._img.data-v-1660088f {
+  width: 130px;
+  height: 68px;
+}
+.worthBuyModule .swiperTab-wrap .swiperTab-title ._span.data-v-1660088f {
+  margin: 28px 0 0 5px;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container.data-v-1660088f {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-bottom: 70px;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container >swiper.data-v-1660088f {
+  width: 100%;
+  height: 100%;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container >swiper >swiper-item.data-v-1660088f {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  height: 100%;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container >swiper >swiper-item .link-to-pro.data-v-1660088f {
+  width: 25%;
+  text-align: center;
+  padding-top: 36px;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container >swiper >swiper-item .link-to-pro .pro-container.data-v-1660088f {
+  width: 100%;
+  height: 120px;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container >swiper >swiper-item .link-to-pro .pro-container >._img.data-v-1660088f {
+  width: 120px;
+  height: 120px;
+  display: inline;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container >swiper >swiper-item .link-to-pro .text.data-v-1660088f {
+  width: 100%;
+  height: 100%;
+  line-height: 35px;
+  padding-top: 8px;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container >swiper >swiper-item .link-to-pro .text .text-title.data-v-1660088f {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+.worthBuyModule .swiperTab-wrap .swiper-container >swiper >swiper-item .link-to-pro .text .text-desc.data-v-1660088f {
+  font-size: 24px;
+  color: #999;
+}
+
