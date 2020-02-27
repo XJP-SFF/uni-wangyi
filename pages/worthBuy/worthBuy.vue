@@ -29,27 +29,34 @@
 				</swiper>
 			</div>
 		</div>
+		<!-- 瀑布流 -->
+		<WaterFall/>
 	</div>
 </template>
 
 <script>
 	/* 引入lodash */
 	import _ from "lodash"
+	import WaterFall from '../../components/WaterFall/WaterFall.vue'
 	import { wangyiRequest } from '../../utils/request.js'
 	export default{
+		components: {WaterFall},
 		data(){
 			return {
 				navList: [],
 			}
 		},
 		async mounted(){
+			// console.log('-------')
 			let result = await wangyiRequest('/topic/v1/know/navWap.json')
+			// console.log(result)
 			this.navList = result.data.navList
-			// condole.log(this.navList)
+			// console.log(this.navList)
 		},
 		computed: {
 			newNavList(){
-				return _.chunk(this.navList, 3);
+				// console.log(_.chunk(this.navList, 8))
+				return _.chunk(this.navList, 8)
 			}
 		},
 		methods: {
@@ -96,7 +103,7 @@
 	//轮播图
 	.swiperTab-wrap
 		width 100%
-		padding 0 24px
+		padding 0 15px
 		box-sizing border-box
 		background url('https://m.you.163.com/topic/index/img/topic_title_bg.2373a140.png') no-repeat
 		background-size cover
@@ -104,26 +111,27 @@
 		.swiperTab-title
 			width 100%
 			display flex
-			font-size 30px
+			font-size 16px
 			color #fff
-			padding-top 68px
-			margin-bottom 24px
+			padding-top 32px
+			margin-bottom 12px
 			>img
-				width 130px
-				height 68px
+				width 100px
+				height 40px
 			span 
-				margin 28px 0 0 5px
+				margin 13px 0 0 5px
 		//
 		.swiper-container 
 			width 100%
 			height 100%
 			background-color #fff
 			border-radius 10px
-			padding-bottom 70px
-			>swiper 
+			padding-bottom 25px
+			padding-left 10px
+			swiper 
 				width 100%
-				height 100%
-				>swiper-item
+				height 300px
+				swiper-item
 					display flex
 					justify-content center
 					align-items flex-start
@@ -132,25 +140,25 @@
 					.link-to-pro
 						width 25%
 						text-align center
-						padding-top 36px
+						padding-top 12px
 						.pro-container
-							width 100%
-							height 120px
+							width 80%
+							height 70px
 							>img 
-								width 120px
-								height 120px
+								width 40px
+								height 40px
 								display inline
 						.text
 							width 100%
 							height 100%
-							line-height 35px
+							line-height 18px
 							padding-top 8px
 							.text-title
-								font-size 28px
+								font-size 14px
 								font-weight bold
 								color #333
 							.text-desc
-								font-size 24px
+								font-size 12px
 								color #999
 				
 </style>

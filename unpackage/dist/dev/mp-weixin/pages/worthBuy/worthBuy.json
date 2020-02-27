@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "值得买",
-  "usingComponents": {}
+  "usingComponents": {
+    "WaterFall": "/components/WaterFall/WaterFall",
+    "water-fall": "/components/WaterFall/WaterFall"
+  }
 }

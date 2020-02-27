@@ -15,7 +15,7 @@ export function request(url, data, method='GET'){
 	})
 }
 
-export function wangyiRequest(url, data, method='GET'){
+export function wangyiRequest(url,method='GET',data){
 	return new Promise((resolve, reject) => {
 		uni.request({
 			url: wangyiServer.host + wangyiServer.basePath + url,
@@ -23,6 +23,7 @@ export function wangyiRequest(url, data, method='GET'){
 			method,
 			success: (res) => {
 				resolve(res.data)
+				// console.log(res.data)
 			},
 			fail: (error) => {
 				reject(error);

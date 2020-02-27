@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/cateList/cateList":1,"components/header/header":1,"components/recommend/recommend":1,"components/shopList/shopList":1};
+/******/ 		var cssChunks = {"components/WaterFall/WaterFall":1,"components/cateList/cateList":1,"components/header/header":1,"components/recommend/recommend":1,"components/shopList/shopList":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/cateList/cateList":"components/cateList/cateList","components/header/header":"components/header/header","components/recommend/recommend":"components/recommend/recommend","components/shopList/shopList":"components/shopList/shopList"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/WaterFall/WaterFall":"components/WaterFall/WaterFall","components/cateList/cateList":"components/cateList/cateList","components/header/header":"components/header/header","components/recommend/recommend":"components/recommend/recommend","components/shopList/shopList":"components/shopList/shopList"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
