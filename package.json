@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/XJP-SFF/uni-wangyi#readme",
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "vue-waterfall2": "^1.9.6"
   }
 }
